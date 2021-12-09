@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalAviator", "DigitalAviator.csproj", "{D544D0B0-C7FA-4B91-9BE2-C2CF1192A1DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D544D0B0-C7FA-4B91-9BE2-C2CF1192A1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D544D0B0-C7FA-4B91-9BE2-C2CF1192A1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D544D0B0-C7FA-4B91-9BE2-C2CF1192A1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D544D0B0-C7FA-4B91-9BE2-C2CF1192A1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEEE8717-7284-493A-9AC5-5EB041C5AD1E}
+	EndGlobalSection
+EndGlobal
