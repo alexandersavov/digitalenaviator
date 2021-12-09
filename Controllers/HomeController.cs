@@ -1,11 +1,10 @@
 ﻿using DigitalAviator.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using MapIntegration.Models;
 
 namespace DigitalAviator.Controllers
 {
@@ -20,7 +19,14 @@ namespace DigitalAviator.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            LocationLists model = new LocationLists();
+            var locations = new List<Locations>()
+            {
+                new Locations(1, "LBSF", "Bhubaneswar, Odisha", 42.690434, 23.403122),
+                new Locations(2, "LBPD", "Hyderabad, Telengana", 42.076188, 24.844043)
+            };
+            model.LocationList = locations;
+            return View(model);
         }
 
         public IActionResult Privacy()
