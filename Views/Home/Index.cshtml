@@ -15,7 +15,8 @@
         });
 
         var weatherTileSource = new Microsoft.Maps.TileSource({
-            uriConstructor: 'https://tile.openweathermap.org/map/precipitation_new/{zoom}/{x}/{y}.png?appid=b13fcfc80d3c113e9424c4d4a269f446'
+            //uriConstructor: 'https://tile.openweathermap.org/map/precipitation_new/{zoom}/{x}/{y}.png?appid=b13fcfc80d3c113e9424c4d4a269f446'
+            uriConstructor: 'ftps://digitalenaviator%255C%2524digitalenaviator@waws-prod-am2-501.ftp.azurewebsites.windows.net/site/wwwroot/256/{zoom}/{x}/{y}.png'
         });
         var weatherTileLayer = new Microsoft.Maps.TileLayer({
             mercator: weatherTileSource,

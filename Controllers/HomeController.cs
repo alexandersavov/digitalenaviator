@@ -1,4 +1,5 @@
-﻿using DigitalAviator.Models;
+﻿using System;
+using DigitalAviator.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -27,6 +28,13 @@ namespace DigitalAviator.Controllers
             };
             model.LocationList = locations;
             return View(model);
+        }
+
+        [Route("myroute/{pic}")]
+        public IActionResult Get(string pic)
+        {
+            Byte[] b = System.IO.File.ReadAllBytes("image/" + pic);
+            return File(b, "image/jpeg");
         }
 
         public IActionResult Privacy()
